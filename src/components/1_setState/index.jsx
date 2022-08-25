@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './index.css';
 
 export default class Demo extends Component {
   state = { count: 0 };
@@ -31,6 +32,7 @@ export default class Demo extends Component {
     return (
       <div className='demo'>
         <h1>当前求和为：{count}</h1>
+        <p>{JSON.stringify(this.props)}</p>
         <button onClick={this.add}>点我+1</button>
       </div>
     );
