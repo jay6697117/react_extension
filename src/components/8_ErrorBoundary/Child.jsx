@@ -11,6 +11,7 @@ export default class Child extends Component {
 	}
 
 	render() {
+    test()
 		return (
 			<div>
 				<h2>我是Child组件</h2>
